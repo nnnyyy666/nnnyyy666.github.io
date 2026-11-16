@@ -1,0 +1,2 @@
+a,a:link,button,input[type=submit]{-webkit-transition:.5s all ease-in-out;transition:.5s all ease-in-out}a:active,a:focus,a:hover,a:link:active,a:link:focus,a:link:hover,button:active,button:focus,button:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{-webkit-transition:.3s all ease-in-out;transition:.3s all ease-in-out}a[href^="tel:"]:before{-webkit-transform:rotate(0);transform:rotate(0)}a[href^="tel:"]:hover:before{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}
+/*# sourceMappingURL=animations.min.css.map */

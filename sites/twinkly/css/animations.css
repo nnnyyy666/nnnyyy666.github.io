@@ -1,0 +1,26 @@
+a,
+a:link,
+button,
+input[type="submit"] {
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out; }
+  a:hover, a:active, a:focus,
+  a:link:hover,
+  a:link:active,
+  a:link:focus,
+  button:hover,
+  button:active,
+  button:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:active,
+  input[type="submit"]:focus {
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out; }
+
+a[href^="tel:"]:before {
+  -webkit-transform: rotate(0);
+          transform: rotate(0); }
+
+a[href^="tel:"]:hover:before {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg); }
