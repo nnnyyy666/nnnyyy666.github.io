@@ -1,0 +1,1 @@
+:root{--font-xs:12px;--font-sm:14px;--font-base:16px;--font-base-bigger:18px;--font-base-bigger2:20px;--font-xl:26px;--font-xxl:36px}@media(max-width:991px){:root{--font-xl:22px}}@media(max-width:767px){:root{--font-xl:20px;--font-base-bigger:16px}}

@@ -1,0 +1,52 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-8.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-8.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-8.use[3]!./src/styles/pages/news.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+:root {
+  --font-xs: 12px;
+  --font-sm: 14px;
+  --font-base: 16px;
+  --font-base-bigger: 18px;
+  --font-base-bigger2: 20px;
+  --font-xl: 26px;
+  --font-xxl: 36px;
+}
+@media (max-width: 991px) {
+  :root {
+    --font-xl: 22px;
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --font-xl: 20px;
+    --font-base-bigger: 16px;
+  }
+}
+
+.news__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 36px;
+  gap: 36px;
+}
+@media only screen and (max-width: 1399px) {
+  .news__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .news__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .news__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 575px) {
+  .news__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=news.css.map*/

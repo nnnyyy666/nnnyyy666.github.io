@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#111111">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title>NOQO | Электронные сигареты</title>
+	<meta name="description" content="Официальный сайт электронных девайсов NOQO. Качественные продукты с разнообразной палитрой вкусов у тебя в кармане.">
+	<meta name="keywords" content="#">
+	<link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
+	<style>
+	#preloader {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000000;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 9999;
+	}
+	#preloader.hide {
+		-webkit-animation: fadeOut 1s ease forwards;
+		animation: fadeOut 1s ease forwards;
+	}
+	.spinner {
+		display: block;
+		position: relative;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		border: 3px solid transparent;
+		border-top-color: #9370DB;
+		-webkit-animation: spin 2s linear infinite;
+		animation: spin 2s linear infinite;
+
+
+	}
+
+	@media (max-width: 767px) {
+		.spinner {
+			width: 75px;
+			height: 75px;
+		}
+	}
+	.spinner:before {
+		content: "";
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		right: 5px;
+		bottom: 5px;
+		border-radius: 50%;
+		border: 3px solid transparent;
+		border-top-color: #BA55D3;
+		-webkit-animation: spin 3s linear infinite;
+		animation: spin 3s linear infinite;
+	}
+	.spinner:after {
+		content: "";
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		right: 15px;
+		bottom: 15px;
+		border-radius: 50%;
+		border: 3px solid transparent;
+		border-top-color: #FF00FF;
+		-webkit-animation: spin 1.5s linear infinite;
+		animation: spin 1.5s linear infinite;
+	}
+	@-webkit-keyframes spin {
+		0%   {
+			-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+		100% {
+			-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
+	@keyframes spin {
+		0%   {
+			-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+		100% {
+			-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes fadeOut {
+		0% { opacity: 1; }
+		100% { opacity: 0; display: none; }
+	}
+</style>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		let time = 6; //6000
+
+		// Проверяем, был ли прелоадер уже отображен
+		if (localStorage.getItem("preloaderShown") !== "true") {
+			// Показать прелоадер
+			document.getElementById("preloader").style.display = "flex";
+			//document.getElementById("content").style.display = "none";
+
+			// Скрыть прелоадер и показать контент после задержки в 5 секунд
+			setTimeout(function () {
+				document.getElementById("preloader").classList.add("hide");
+				//		document.getElementById("preloader").style.display = "none";
+				//document.getElementById("content").style.display = "block";
+
+				// Сохранить информацию о том, что прелоадер был отображен
+				localStorage.setItem("preloaderShown", "true");
+			}, time);
+		} else {
+			time = 2000;
+			document.getElementById("preloader").style.display = "flex";
+			//document.getElementById("content").style.display = "none";
+
+			// Скрыть прелоадер и показать контент после задержки в 5 секунд
+			setTimeout(function () {
+				document.getElementById("preloader").classList.add("hide");
+				//			document.getElementById("preloader").style.display = "none";
+				//document.getElementById("content").style.display = "block";
+
+				// Сохранить информацию о том, что прелоадер был отображен
+				localStorage.setItem("preloaderShown", "true");
+			}, time);
+
+		}
+	});
+</script>
+</head>
+
+<body>
+<noindex>
+	<div class="preloader" id="preloader" >
+	<div class="spinner">
+	</div>
+</div>
+</noindex>
+<header class="header">
+	<div class="header__content">
+		<a href="/sites/noqo/index.html" class="header__logo">
+			<img src="./img/theme/logo.svg" alt="NOQO" class="" />
+		</a>
+		<nav class="header__nav">
+			<ul class="list-reset header__list">
+				<li>
+					<a href="./product.html" class="header__link">
+						Продукты <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-apps"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M14 7l6 0" /><path d="M17 4l0 6" /></svg>
+					</a>
+				</li>
+				<li>
+					<a href="./buy.html" class="header__link">
+						Где купить?
+					</a>
+				</li>
+				<li>
+					<a href="./about.html" class="header__link">
+						Партнерам
+					</a>
+				</li>
+				<li>
+					<a href="./news.html" class="header__link">
+						Новости
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<button data-burger class="header__btn">
+			<div class="burger">
+				<div class="burger__line"></div>
+				<div class="burger__line"></div>
+			</div>
+
+		</button>
+	
+	</div>
+</header>
+
+<div class="sidebar" data-menu>
+	<div class="sidebar__content">
+	<ul class="list-reset sidebar__list">
+		<li>
+			<a href="./product.html" class="sidebar__link text-gradient">
+				Продукты
+			</a>
+		</li>
+		<li>
+			<a href="./buy.html" class="sidebar__link">
+				Где купить?
+			</a>
+		</li>
+		<li>
+			<a href="./about.html" class="sidebar__link">
+				Партнерам
+			</a>
+		</li>
+		<li>
+			<a href="./news.html" class="sidebar__link">
+				Новости
+			</a>
+		</li>
+
+	</ul>
+	<div class="sidebar__btn">
+		<a class="btn btn--xs" href="./index.html#callback" data-to="callback" id="footer_nav_pertners">
+			Стать партнером
+		</a>
+	</div>
+	</div>
+</div>
+
+<div class="site-container" id="content" >
+
+	<main class="main main--product">
+		
+	<div class="product page">
+
+
+<section>
+	<div class="product__marquee-wrap">
+		<div class="marquee" style=""><img src="./img/theme/noqo-mini-1500-bg.svg" /></div>
+	</div>
+	<div class="container">
+		<div class="product__card">
+			<div class="product__card-title product__card-title--mob">
+				<h1 class="text-gradient h1--product">
+					NOQO <span class="h1--product-sm">MINI 1500</span>
+				</h1>
+				<div class="product__card-descr">
+					Компактный и стильный, с покрытием Soft-touch.
+				</div>
+			</div>
+
+			<div class="product__card-img">
+				<img class="lazyload product__main-img" data-src="./img/content/product-big.png" width="500" height="500"  />
+			</div>
+			<div class="product__card-info">
+				<div class="product__card-title product__card-title--desktop">
+					<h1 class="text-gradient h1--product">
+						NOQO <span class="h1--product-sm">MINI 1500</span>
+					</h1>
+					<div class="product__card-descr">
+						Компактный и стильный, с покрытием Soft-touch.
+					</div>
+				</div>
+				<div class="product__card-list">
+					<div class="product__card-row">
+						<div class="product__card-icon product__card-icon1"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-bolt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" /></svg>
+</div>
+						1500 затяжек
+					</div>
+					<div class="product__card-row">
+						<div class="product__card-icon product__card-icon2"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-droplet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7.502 19.423c2.602 2.105 6.395 2.105 8.996 0c2.602 -2.105 3.262 -5.708 1.566 -8.546l-4.89 -7.26c-.42 -.625 -1.287 -.803 -1.936 -.397a1.376 1.376 0 0 0 -.41 .397l-4.893 7.26c-1.695 2.838 -1.035 6.441 1.567 8.546z" /></svg>
+</div>
+						4 мл жидкости
+					</div>
+					<div class="product__card-row">
+						<div class="product__card-icon product__card-icon3"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-power"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 6a7.75 7.75 0 1 0 10 0" /><path d="M12 4l0 8" /></svg>
+</div>
+						650 мАч аккумулятор
+					</div>
+					<div class="product__card-row">
+						<div class="product__card-icon product__card-icon4"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-dimensions"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 5h11" /><path d="M12 7l2 -2l-2 -2" /><path d="M5 3l-2 2l2 2" /><path d="M19 10v11" /><path d="M17 19l2 2l2 -2" /><path d="M21 12l-2 -2l-2 2" /><path d="M3 10m0 2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v7a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2z" /></svg>
+</div>
+						35*18*68 мм
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+		<section>
+			<div class="container">
+				<div class="product__about">
+					<h2 class="h2--section-title">О линейке</h2>
+					<div class="product__about-content">
+						<p>Линейка электронных сигарет. Это премиальные, стильные и высокотехнологичные устройства, которые занимают первое место в ассортименте нашего бренда по таким показателям, как объем жидкости и количество затяжек. Идеально лежит в руке и имеет компактный форм-фактор для данного количества затяжек.</p>
+						<p>Солнечный тропический ананас в сочетании с ледяной свежестью вместе с электронной сигаретой одноразовой NOQO 1500 Ананас Морозный принесут волну наслаждения столь желанную, словно столик с ледяным соком вынесли аккурат к моменту сильнейшей жажды под палящим солнцем.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="product__details">
+
+
+					<div class="swiperSingle swiper">
+	<!-- Additional required wrapper -->
+	<div class="swiper-wrapper">
+		<!-- Slides -->
+					<div class="swiper-slide">
+				<div class="product-element">
+					<div class="product-element__img">
+						<img src="./img/content/product/product-el1.png" />
+					</div>
+					<div class="product-element__content">
+						<div class="product-element__title">
+							Soft-touch покрытие с легким перламутровым эффектам
+						</div>
+						<div class="product-element__descr">
+							Корпус устройства обладает приятным на ощупь soft-touch покрытием, которое придает девайсу дополнительную эстетическую привлекательность.                                            
+						</div>
+					</div>
+
+				</div>
+			</div>
+					<div class="swiper-slide">
+				<div class="product-element">
+					<div class="product-element__img">
+						<img src="./img/content/product/product-el2.png" />
+					</div>
+					<div class="product-element__content">
+						<div class="product-element__title">
+							USB-порт зарядки
+						</div>
+						<div class="product-element__descr">
+							Имеет зарядку и его порт.                                            
+						</div>
+					</div>
+
+				</div>
+			</div>
+					<div class="swiper-slide">
+				<div class="product-element">
+					<div class="product-element__img">
+						<img src="./img/content/product/product-el3.png" />
+					</div>
+					<div class="product-element__content">
+						<div class="product-element__title">
+							Заголовок элемента хотя бы в 2 строки
+						</div>
+						<div class="product-element__descr">
+							Текст с преимуществом и особенностью этой сигареты.                                            
+						</div>
+					</div>
+
+				</div>
+			</div>
+			</div>
+
+	<div class="swiper-pagination--default"></div>
+
+	<!-- If we need pagination -->
+	<div class="swiper-arrows--default">
+		<div class="swiper-button-prev--default swiper-button--default">
+			<svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.292891 7.29289C-0.0976333 7.68341 -0.0976334 8.31658 0.29289 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07106 15.0711C8.46159 14.6805 8.46159 14.0474 8.07106 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928929C7.68054 0.538404 7.04738 0.538404 6.65685 0.928928L0.292891 7.29289ZM28 7L0.999998 7L0.999998 9L28 9L28 7Z" fill="currentColor"/>
+</svg>
+		</div>
+		<div class="swiper-button-next--default swiper-button--default">
+			<svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M27.7071 8.70711C28.0976 8.31658 28.0976 7.68342 27.7071 7.2929L21.3431 0.928934C20.9526 0.53841 20.3195 0.53841 19.9289 0.928934C19.5384 1.31946 19.5384 1.95262 19.9289 2.34315L25.5858 8L19.9289 13.6569C19.5384 14.0474 19.5384 14.6805 19.9289 15.0711C20.3195 15.4616 20.9526 15.4616 21.3431 15.0711L27.7071 8.70711ZM-8.74228e-08 9L27 9L27 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"/>
+</svg>
+
+		</div>
+	</div>
+
+
+
+
+	<!-- If we need scrollbar -->
+	<div class="swiper-scrollbar"></div>
+</div>
+
+				</div>
+			</div>
+		</section>
+
+
+			<section class="product__section-canvas product-canvas js-animate-product js-animate-product-ready">
+				<div class="container">
+				<div class="product-canvas__inner canvas-wrapper">
+					<canvas id="productCanvas" class="js-productCanvas productCanvas productCanvas--runner" width="750" height="750" data-animation-speed="2.3" data-count-sprite="50" data-sprite-first="./img/content/sprite/example1.png"  data-sprite-second="./img/content/sprite/example2.png" ></canvas>
+
+					<div class="product-pins js-product-pins">
+						<div style=" top: 60%; left: 21%;"
+								 class="product-pin product-pin--small product-pin--auto">
+							<div class="product-pins__desc">Стальной корпус высшего качества</div>
+						</div>
+						<div style=" top: 36.061417101%; left: 59.578813917453%;"
+								 class="product-pin  product-pin--auto">
+							<div class="product-pins__desc">Бак с жидкостью съемный</div>
+						</div>
+						<div style=" top: 25%; left: 76%;"
+								 class="product-pin product-pin--small product-pin--auto">
+							<div class="product-pins__desc">Сменный колпачок высокого качества</div>
+						</div>
+					</div>
+				</div>
+				</div>
+
+			</section>
+
+			<section>
+				<div class="container">
+				<h2 class="h2--section-title">Вкусы</h2>
+				
+<div class="tastes">
+			<div class="tastes__card">
+			<div class="tastes__inner">
+			<div class="tastes__top">
+			<h3 class="tastes__title">Двойное яблоко</h3>
+			<div class="tastes__labels">
+				<div class="tastes__label">
+					Фруктовый
+				</div>
+				<div class="tastes__label">
+					Сладкий
+				</div>
+			</div>
+			</div>
+			<div class="tastes__img">
+
+				<img class="lazyload" src="./img/theme/loader.svg" data-src="./img/content/product/taste1.png" width="400" height="300" />
+			</div>
+			</div>
+		</div>
+			<div class="tastes__card">
+			<div class="tastes__inner">
+			<div class="tastes__top">
+			<h3 class="tastes__title">Вишневая кола</h3>
+			<div class="tastes__labels">
+				<div class="tastes__label">
+					Фруктовый
+				</div>
+				<div class="tastes__label">
+					Сладкий
+				</div>
+			</div>
+			</div>
+			<div class="tastes__img">
+
+				<img class="lazyload" src="./img/theme/loader.svg" data-src="./img/content/product/taste2.png" width="400" height="300" />
+			</div>
+			</div>
+		</div>
+			<div class="tastes__card">
+			<div class="tastes__inner">
+			<div class="tastes__top">
+			<h3 class="tastes__title">Киви маракуйя гуава</h3>
+			<div class="tastes__labels">
+				<div class="tastes__label">
+					Фруктовый
+				</div>
+				<div class="tastes__label">
+					Кислый
+				</div>
+			</div>
+			</div>
+			<div class="tastes__img">
+
+				<img class="lazyload" src="./img/theme/loader.svg" data-src="./img/content/product/taste3.png" width="400" height="300" />
+			</div>
+			</div>
+		</div>
+			<div class="tastes__card">
+			<div class="tastes__inner">
+			<div class="tastes__top">
+			<h3 class="tastes__title">Ледяная клубника</h3>
+			<div class="tastes__labels">
+				<div class="tastes__label">
+					Фруктовый
+				</div>
+				<div class="tastes__label">
+					Свежий
+				</div>
+			</div>
+			</div>
+			<div class="tastes__img">
+
+				<img class="lazyload" src="./img/theme/loader.svg" data-src="./img/content/product/taste4.png" width="400" height="300" />
+			</div>
+			</div>
+		</div>
+	</div>
+
+				</div>
+			</section>
+
+		<section>
+			<div class="container">
+					<h2 class="h2--section-title">Другие линейки</h2>
+
+					
+<div class="swiperSingle swiper">
+	<!-- Additional required wrapper -->
+	<div class="swiper-wrapper">
+		<!-- Slides -->
+					<div class="swiper-slide">
+				<div class="product-other">
+					<div class="product-other__img">
+						<img src="./img/content/product/product-other1.png" />
+					</div>
+
+					<div class="product-other__content">
+						<div class="product-other__title-wrap">
+							<div>
+							<div class="product-other__title text-gradient">
+								Noqo Mini 1500
+							</div>
+							<div class="product-other__descr">
+								Компактный и стильный, с покрытием Soft-touch.
+							</div>
+							</div>
+							<a href="#" class="product-other__btn btn btn--xs">Смотреть линейку</a>
+
+						</div>
+						<div class="product-other__about">
+							<div class="product-other__statistics">
+								<div class="product-other__statistics-item">
+									<div class="product-other__statistics-title">
+										1500
+									</div>
+									<div class="product-other__statistics-line"></div>
+									<div class="product-other__statistics-descr">
+										Количество затяжек
+									</div>
+								</div>
+								<!------->
+								<div class="product-other__statistics-item">
+									<div class="product-other__statistics-title">
+										4 мл
+									</div>
+									<div class="product-other__statistics-line"></div>
+									<div class="product-other__statistics-descr">
+										Объем жидкости в устройства
+									</div>
+								</div>
+
+							<!------>
+							<div class="product-other__statistics-item">
+								<div class="product-other__statistics-title">
+									650 мАч
+								</div>
+								<div class="product-other__statistics-line"></div>
+								<div class="product-other__statistics-descr">
+									Емкость аккумулятора + USB
+								</div>
+							</div>
+
+						<!------>
+						<div class="product-other__statistics-item">
+							<div class="product-other__statistics-title">
+								35*18*68 мм
+							</div>
+							<div class="product-other__statistics-line"></div>
+							<div class="product-other__statistics-descr">
+								Размер устройства
+							</div>
+						</div>
+
+					<!------>
+
+
+						</div>
+					</div>
+
+				</div>
+				</div>
+			</div>
+
+					<div class="swiper-slide">
+				<div class="product-other">
+					<div class="product-other__img">
+						<img src="./img/content/product/product-other2.png" />
+					</div>
+
+					<div class="product-other__content">
+						<div class="product-other__title-wrap">
+							<div>
+							<div class="product-other__title text-gradient">
+								Noqo Nasty 8500
+							</div>
+							<div class="product-other__descr">
+								Коллаборация брендов Noqo и Nasty
+							</div>
+							</div>
+							<a href="#" class="product-other__btn btn btn--xs">Смотреть линейку</a>
+
+						</div>
+						<div class="product-other__about">
+							<div class="product-other__statistics">
+								<div class="product-other__statistics-item">
+									<div class="product-other__statistics-title">
+										8500
+									</div>
+									<div class="product-other__statistics-line"></div>
+									<div class="product-other__statistics-descr">
+										Количество затяжек
+									</div>
+								</div>
+								<!------->
+								<div class="product-other__statistics-item">
+									<div class="product-other__statistics-title">
+										10 мл
+									</div>
+									<div class="product-other__statistics-line"></div>
+									<div class="product-other__statistics-descr">
+										Объем жидкости в устройства
+									</div>
+								</div>
+
+							<!------>
+							<div class="product-other__statistics-item">
+								<div class="product-other__statistics-title">
+									500 мАч
+								</div>
+								<div class="product-other__statistics-line"></div>
+								<div class="product-other__statistics-descr">
+									Емкость аккумулятора + USB
+								</div>
+							</div>
+
+						<!------>
+						<div class="product-other__statistics-item">
+							<div class="product-other__statistics-title">
+								45*21*85 мм
+							</div>
+							<div class="product-other__statistics-line"></div>
+							<div class="product-other__statistics-descr">
+								Размер устройства
+							</div>
+						</div>
+
+					<!------>
+
+
+						</div>
+					</div>
+
+				</div>
+				</div>
+			</div>
+
+			</div>
+
+	<div class="swiper-pagination--default"></div>
+
+	<!-- If we need pagination -->
+	<div class="swiper-arrows--default">
+		<div class="swiper-button-prev--default swiper-button--default">
+			<svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.292891 7.29289C-0.0976333 7.68341 -0.0976334 8.31658 0.29289 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07106 15.0711C8.46159 14.6805 8.46159 14.0474 8.07106 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928929C7.68054 0.538404 7.04738 0.538404 6.65685 0.928928L0.292891 7.29289ZM28 7L0.999998 7L0.999998 9L28 9L28 7Z" fill="currentColor"/>
+</svg>
+		</div>
+		<div class="swiper-button-next--default swiper-button--default">
+			<svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M27.7071 8.70711C28.0976 8.31658 28.0976 7.68342 27.7071 7.2929L21.3431 0.928934C20.9526 0.53841 20.3195 0.53841 19.9289 0.928934C19.5384 1.31946 19.5384 1.95262 19.9289 2.34315L25.5858 8L19.9289 13.6569C19.5384 14.0474 19.5384 14.6805 19.9289 15.0711C20.3195 15.4616 20.9526 15.4616 21.3431 15.0711L27.7071 8.70711ZM-8.74228e-08 9L27 9L27 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"/>
+</svg>
+
+		</div>
+	</div>
+
+
+
+
+	<!-- If we need scrollbar -->
+	<div class="swiper-scrollbar"></div>
+</div>
+
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="callback">
+	<form name="callback" class="callback__form js-form">
+
+		<div class="callback__left">
+			<div class="callback__txt">
+
+				<h2 class="callback__title h2--section-title">
+					Сотрудничество
+				</h2>
+				<div class="callback__subtitle">
+					Заполните форму, и мы обязательно свяжемся с вами в ближайшее время
+				</div>
+			</div>
+
+		</div>
+		<div class="callback__right">
+			<div class="callback__fields">
+				<div class="callback__field-wrapper">
+					<input type="text" class="input-reset callback__field" data-error="Введите имя" placeholder="Имя *" name="name">
+					<div class="error-wrapper">Пожалуйста введите имя</div>
+				</div>
+				<div class="callback__row">
+					<div class="callback__field-wrapper">
+						<input type="text" class="input-reset callback__field" data-error="Введите телефон" placeholder="Телефон *" name="phone">
+						<div class="error-wrapper">Пожалуйста введите телефон</div>
+					</div>
+					<div class="callback__field-wrapper">
+						<input type="text" class="input-reset callback__field" placeholder="Email" name="email">
+
+					</div>
+				</div>
+				<div class="callback__row">
+				<div class="callback__field-wrapper">
+					<input type="text" class="input-reset callback__field" data-error="Заполните компанию" placeholder="Компания *" name="firm">
+					<div class="error-wrapper">Полалуйста заполните компанию</div>
+				</div>
+				<div class="callback__field-wrapper">
+					<input type="text" class="input-reset callback__field"  placeholder="Город" name="city">
+				</div>
+				</div>
+				<div class="callback__field-wrapper">
+					<input type="text" class="input-reset callback__field"  placeholder="Тема вашего обращения" name="theme">
+				</div>
+				<div class="callback__field-wrapper">
+				<textarea class="input-reset callback__field callback__textarea" placeholder="Комментарий" name="comment"></textarea>
+				</div>
+			</div>
+			<div class="callback__submit-row">
+				<button type="submit" class="js-callback-btn btn btn--lg">
+					Отправить
+				</button>
+				<div class="callback__agreement">
+					<input type="checkbox" id="agreement" name="agreement" checked />
+					<label for="agreement">Даю согласие на обработку <a href="#" target="_blank">персональных данных</a></label>
+				</div>
+
+			</div>
+
+		</div>
+	</form>
+
+</div>
+			</div>
+		</section>
+
+
+
+
+	</div>
+
+
+	</main>
+
+
+</div>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__wrapper">
+			<div class="footer__left">
+				<a href="/sites/noqo/index.html" class="footer__logo">
+					<img src="./img/theme/logo.svg" alt="NOQO" class="" />
+				</a>
+				<div class="footer__copyright">
+					2025. Noqo, все права защищены
+				</div>
+			</div>
+			<div class="footer__menu">
+				<div class="footer__nav">
+				<ul>
+					<li>
+						<a href="#">NOQO Mini</a>
+					</li>
+					<li>
+						<a href="#">NOQO Nasty</a>
+					</li>
+					<li>
+						<a href="#">NOQO</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer__nav">
+				<ul>
+					<li>
+						<a href="./product.html">Продукты</a>
+					</li>
+					<li>
+						<a href="./buy.html">Где купить</a>
+					</li>
+					<li>
+						<a href="./about.html">Партнерам</a>
+					</li>
+					<li>
+						<a href="./news.html">Новости</a>
+					</li>
+				</ul>
+			</div>
+			</div>
+
+			<div class="footer__right">
+				<div class="footer__connect">
+					<a href="tel:84950110969" class="footer__phone text-gradient">
+						8 (495) 011 09 69
+					</a>
+					<a target="_blank" href="https://t.me/B5vape_bot" rel="nofollow noopener" aria-label="telegram" class="footer__social footer__social_tg">
+						<svg width="48px" height="48px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z" fill="currentColor"/>
+</svg>
+					</a>
+
+				</div>
+				<div class="footer__btn">
+					<a class="footer__link-partner" href="./index.html#callback" data-to="callback" id="footer_nav_pertners">
+						<span class="footer__link-partner-icon"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-briefcase"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /><path d="M12 12l0 .01" /><path d="M3 13a20 20 0 0 0 18 0" /></svg>
+</span>
+						Стать партнером
+					</a>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+		</div>
+	</div>
+</footer>
+
+
+<noindex>
+	<div class="cookies js-cookies" >
+	<div class="cookies__title">Используем <b>cookies</b> для улучшения работы сайта. Оставаясь с нами, вы соглашаетесь на использование <a href="https://inflave.com/wp-content/uploads/2024/02/politika_konfidenczialnosti_i_obrabotki_personalnyh_dannyh_pri.pdf" target="_blank" class="cookies__link">файлов cookie</a></div>
+	<button class="btn-reset btn btn--xxs cookies__btn">ОК</button>
+</div>
+</noindex>
+
+<link rel="icon" href="./favicon.svg"><script defer src="./scripts/runtime.3bfba0.js"></script><script defer src="./scripts/vendors.6ce58c.js"></script><script defer src="./scripts/main.d2d960.js"></script><script defer src="./scripts/product.7f4d7e.js"></script><link href="./styles/vendors.90f42e.css" rel="stylesheet"><link href="./styles/main.a61dc3.css" rel="stylesheet"><link href="./styles/product.959a53.css" rel="stylesheet">
+
+</body>
+
+</html>

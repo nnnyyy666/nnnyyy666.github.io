@@ -1,0 +1,114 @@
+(self["webpackChunkwebpack_5_frontend_starter"] = self["webpackChunkwebpack_5_frontend_starter"] || []).push([["news-inner"],{
+
+/***/ "./config/entry/pages/news-inner.js":
+/*!******************************************!*\
+  !*** ./config/entry/pages/news-inner.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _styles_pages_news_inner_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/styles/pages/news-inner.scss */ "./src/styles/pages/news-inner.scss");
+/* harmony import */ var _scripts_pages_news_inner_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/scripts/pages/news-inner.js */ "./src/scripts/pages/news-inner.js");
+/* harmony import */ var _scripts_pages_news_inner_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scripts_pages_news_inner_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _templates_pages_news_inner_html_twig__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/templates/pages/news-inner.html.twig */ "./src/templates/pages/news-inner.html.twig");
+/* harmony import */ var _templates_pages_news_inner_html_twig__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_templates_pages_news_inner_html_twig__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+
+/***/ }),
+
+/***/ "./src/scripts/pages/news-inner.js":
+/*!*****************************************!*\
+  !*** ./src/scripts/pages/news-inner.js ***!
+  \*****************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/img/content/news.jpg":
+/*!**********************************!*\
+  !*** ./src/img/content/news.jpg ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "img/content/news.jpg";
+
+/***/ }),
+
+/***/ "./src/img/theme/loader.svg":
+/*!**********************************!*\
+  !*** ./src/img/theme/loader.svg ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "img/theme/loader.svg";
+
+/***/ }),
+
+/***/ "./src/img/theme/logo.svg":
+/*!********************************!*\
+  !*** ./src/img/theme/logo.svg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "img/theme/logo.svg";
+
+/***/ }),
+
+/***/ "./src/styles/pages/news-inner.scss":
+/*!******************************************!*\
+  !*** ./src/styles/pages/news-inner.scss ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/templates/pages/news-inner.html.twig":
+/*!**************************************************!*\
+  !*** ./src/templates/pages/news-inner.html.twig ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = function(obj) {
+obj || (obj = {});
+var __t, __p = '';
+with (obj) {
+__p += '<!DOCTYPE html>\n<html lang="ru-RU">\n\n<head>\n	<meta charset="UTF-8">\n	<meta name="theme-color" content="#111111">\n	<meta http-equiv="X-UA-Compatible" content="ie=edge">\n	<meta name="viewport" content="width=device-width, initial-scale=1.0">\n	<meta name="format-detection" content="telephone=no">\n	<title>NOQO | Электронные сигареты</title>\n	<meta name="description" content="Официальный сайт электронных девайсов NOQO. Качественные продукты с разнообразной палитрой вкусов у тебя в кармане.">\n	<meta name="keywords" content="#">\n	<link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">\n\n\n	<link rel="preconnect" href="https://fonts.googleapis.com">\n	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">\n	<script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>\n\n\n	<style>\n	#preloader {\n		position: fixed;\n		top: 0;\n		left: 0;\n		width: 100%;\n		height: 100%;\n		background-color: #000000;\n		display: flex;\n		justify-content: center;\n		align-items: center;\n		z-index: 9999;\n	}\n	#preloader.hide {\n		-webkit-animation: fadeOut 1s ease forwards;\n		animation: fadeOut 1s ease forwards;\n	}\n	.spinner {\n		display: block;\n		position: relative;\n		width: 150px;\n		height: 150px;\n		border-radius: 50%;\n		border: 3px solid transparent;\n		border-top-color: #9370DB;\n		-webkit-animation: spin 2s linear infinite;\n		animation: spin 2s linear infinite;\n\n\n	}\n\n	@media (max-width: 767px) {\n		.spinner {\n			width: 75px;\n			height: 75px;\n		}\n	}\n	.spinner:before {\n		content: "";\n		position: absolute;\n		top: 5px;\n		left: 5px;\n		right: 5px;\n		bottom: 5px;\n		border-radius: 50%;\n		border: 3px solid transparent;\n		border-top-color: #BA55D3;\n		-webkit-animation: spin 3s linear infinite;\n		animation: spin 3s linear infinite;\n	}\n	.spinner:after {\n		content: "";\n		position: absolute;\n		top: 15px;\n		left: 15px;\n		right: 15px;\n		bottom: 15px;\n		border-radius: 50%;\n		border: 3px solid transparent;\n		border-top-color: #FF00FF;\n		-webkit-animation: spin 1.5s linear infinite;\n		animation: spin 1.5s linear infinite;\n	}\n	@-webkit-keyframes spin {\n		0%   {\n			-webkit-transform: rotate(0deg);\n			-ms-transform: rotate(0deg);\n			transform: rotate(0deg);\n		}\n		100% {\n			-webkit-transform: rotate(360deg);\n			-ms-transform: rotate(360deg);\n			transform: rotate(360deg);\n		}\n	}\n	@keyframes spin {\n		0%   {\n			-webkit-transform: rotate(0deg);\n			-ms-transform: rotate(0deg);\n			transform: rotate(0deg);\n		}\n		100% {\n			-webkit-transform: rotate(360deg);\n			-ms-transform: rotate(360deg);\n			transform: rotate(360deg);\n		}\n	}\n\n	@keyframes fadeOut {\n		0% { opacity: 1; }\n		100% { opacity: 0; display: none; }\n	}\n</style>\n<script>\n	document.addEventListener("DOMContentLoaded", function () {\n		let time = 6; //6000\n\n		// Проверяем, был ли прелоадер уже отображен\n		if (localStorage.getItem("preloaderShown") !== "true") {\n			// Показать прелоадер\n			document.getElementById("preloader").style.display = "flex";\n			//document.getElementById("content").style.display = "none";\n\n			// Скрыть прелоадер и показать контент после задержки в 5 секунд\n			setTimeout(function () {\n				document.getElementById("preloader").classList.add("hide");\n				//		document.getElementById("preloader").style.display = "none";\n				//document.getElementById("content").style.display = "block";\n\n				// Сохранить информацию о том, что прелоадер был отображен\n				localStorage.setItem("preloaderShown", "true");\n			}, time);\n		} else {\n			time = 2000;\n			document.getElementById("preloader").style.display = "flex";\n			//document.getElementById("content").style.display = "none";\n\n			// Скрыть прелоадер и показать контент после задержки в 5 секунд\n			setTimeout(function () {\n				document.getElementById("preloader").classList.add("hide");\n				//			document.getElementById("preloader").style.display = "none";\n				//document.getElementById("content").style.display = "block";\n\n				// Сохранить информацию о том, что прелоадер был отображен\n				localStorage.setItem("preloaderShown", "true");\n			}, time);\n\n		}\n	});\n</script>\n</head>\n\n<body>\n<noindex>\n	<div class="preloader" id="preloader" >\n	<div class="spinner">\n	</div>\n</div>\n</noindex>\n<header class="header">\n	<div class="header__content">\n		<a href="/" class="header__logo">\n			<img src="' +
+((__t = (__webpack_require__(/*! @/img/theme/logo.svg */ "./src/img/theme/logo.svg"))) == null ? '' : __t) +
+'" alt="NOQO" class="" />\n		</a>\n		<nav class="header__nav">\n			<ul class="list-reset header__list">\n				<li>\n					<a href="./product.html" class="header__link">\n						Продукты <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-apps"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M14 7l6 0" /><path d="M17 4l0 6" /></svg>\n					</a>\n				</li>\n				<li>\n					<a href="./buy.html" class="header__link">\n						Где купить?\n					</a>\n				</li>\n				<li>\n					<a href="./about.html" class="header__link">\n						Партнерам\n					</a>\n				</li>\n				<li>\n					<a href="./news.html" class="header__link">\n						Новости\n					</a>\n				</li>\n			</ul>\n		</nav>\n		<button data-burger class="header__btn">\n			<div class="burger">\n				<div class="burger__line"></div>\n				<div class="burger__line"></div>\n			</div>\n\n		</button>\n	\n	</div>\n</header>\n\n<div class="sidebar" data-menu>\n	<div class="sidebar__content">\n	<ul class="list-reset sidebar__list">\n		<li>\n			<a href="./product.html" class="sidebar__link text-gradient">\n				Продукты\n			</a>\n		</li>\n		<li>\n			<a href="./buy.html" class="sidebar__link">\n				Где купить?\n			</a>\n		</li>\n		<li>\n			<a href="./about.html" class="sidebar__link">\n				Партнерам\n			</a>\n		</li>\n		<li>\n			<a href="./news.html" class="sidebar__link">\n				Новости\n			</a>\n		</li>\n\n	</ul>\n	<div class="sidebar__btn">\n		<a class="btn btn--xs" href="./index.html#callback" data-to="callback" id="footer_nav_pertners">\n			Стать партнером\n		</a>\n	</div>\n	</div>\n</div>\n\n<div class="site-container" id="content" >\n\n	<main class="main main--page">\n			<div class="container">\n		<h1 class="h1--page h1--page-white">\n			Механизм парения от А до Я: что происходит внутри электронной сигареты\n		</h1>\n		<div class="news-inner__wrapper">\n		<div class="news-inner__date">\n			04.10.2024\n		</div>\n\n		<div class="news-inner__line">\n		</div>\n\n		<div class="news-inner__content-2cols">\n			<div class="news-inner__content-col">\n				<p>В этой статье мы расскажем о механизме действия электронных сигарет, из каких частей они состоят и что находится внутри устройства.</p>\n				<p>Довольно большое разнообразие видов электронных сигарет мало сказалось на общих принципах работы – они едины.</p>\n				<p>Если объяснять максимально просто, то процесс использования электронных девайсов выглядит так: испаритель снабжается жидкостью, устройство активируется, и батарея подаёт напряжение на испаритель. Испаритель нагревается, жидкость становится газообразной. Далее образуется пар, который и будет итогом всего процесса.\n				</p>\n				<p>Независимо от типа устройства и механизма управления сам процесс испарения всегда контролируется юзером. Существует два основных вида запуска электронки: с кнопки при нажатии и автоматически при вдохе.\n				</p>\n				<p>Что же нас ждёт внутри одноразовой электронки? Мы разобрали её для вас (просьба не повторять самостоятельно).</p>\n				<p>Если объяснять максимально просто, то процесс использования электронных девайсов выглядит так: испаритель снабжается жидкостью, устройство активируется, и батарея подаёт напряжение на испаритель. Испаритель нагревается, жидкость становится газообразной. Далее образуется пар, который и будет итогом всего процесса.\n				</p>\n				<p>Независимо от типа устройства и механизма управления сам процесс испарения всегда контролируется юзером. Существует два основных вида запуска электронки: с кнопки при нажатии и автоматически при вдохе.\n				</p>\n				<p>Что же нас ждёт внутри одноразовой электронки? Мы разобрали её для вас (просьба не повторять самостоятельно).</p>\n			</div>\n			<div class="news-inner__content-col news-inner__content-col-pic">\n\n				<img class="lazyload" src="' +
+((__t = (__webpack_require__(/*! @/img/theme/loader.svg */ "./src/img/theme/loader.svg"))) == null ? '' : __t) +
+'" data-src="' +
+((__t = (__webpack_require__(/*! @/img/content/news.jpg */ "./src/img/content/news.jpg"))) == null ? '' : __t) +
+'" width="400" height="300" />\n\n				<div class="news-inner__pic-signature">Что же нас ждёт внутри одноразовой электронки? Мы разобрали её для вас (просьба не повторять самостоятельно).</div>\n			</div>\n\n		</div>\n		<div class="news-inner__content">\n			<p>В этой статье мы расскажем о механизме действия электронных сигарет, из каких частей они состоят и что находится внутри устройства.</p>\n			<p>Довольно большое разнообразие видов электронных сигарет мало сказалось на общих принципах работы – они едины.</p>\n			<p>Если объяснять максимально просто, то процесс использования электронных девайсов выглядит так: испаритель снабжается жидкостью, устройство активируется, и батарея подаёт напряжение на испаритель. Испаритель нагревается, жидкость становится газообразной. Далее образуется пар, который и будет итогом всего процесса.\n			</p>\n			<p>Независимо от типа устройства и механизма управления сам процесс испарения всегда контролируется юзером. Существует два основных вида запуска электронки: с кнопки при нажатии и автоматически при вдохе.\n			</p>\n			<p>Что же нас ждёт внутри одноразовой электронки? Мы разобрали её для вас (просьба не повторять самостоятельно).</p>\n		</div>\n\n			<div class="news-inner__share">\n				Поделиться\n				<a target="_blank" href="https://vk.com/share.php?url=page/" class="news-inner__share-icon">\n					<svg width="48px" height="48px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">\n	<path d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z" fill="currentColor"/>\n</svg>\n				</a>\n				<a target="_blank" href="https://telegram.me/share/url?url=page" class="news-inner__share-icon">\n					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">\n\n<defs>\n</defs>\n	<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >\n		<path d="M 87.935 21.894 c 0.626 -2.086 0 -3.619 -2.977 -3.619 h -9.846 c -2.504 0 -3.658 1.324 -4.283 2.785 c 0 0 -5.008 12.204 -12.101 20.132 c -2.294 2.295 -3.337 3.026 -4.59 3.026 c -0.625 0 -1.531 -0.731 -1.531 -2.816 V 21.894 c 0 -2.503 -0.727 -3.619 -2.813 -3.619 H 34.32 c -1.564 0 -2.506 1.162 -2.506 2.264 c 0 2.373 3.547 2.921 3.913 9.597 v 14.499 c 0 3.179 -0.574 3.757 -1.826 3.757 c -3.337 0 -11.457 -12.26 -16.273 -26.288 c -0.944 -2.727 -1.89 -3.828 -4.406 -3.828 H 3.376 C 0.562 18.275 0 19.599 0 21.059 c 0 2.608 3.337 15.543 15.542 32.65 c 8.136 11.682 19.599 18.016 30.031 18.016 c 6.258 0 7.033 -1.407 7.033 -3.83 v -8.829 c 0 -2.814 0.593 -3.375 2.575 -3.375 c 1.46 0 3.963 0.729 9.805 6.362 c 6.676 6.676 7.776 9.671 11.532 9.671 h 9.846 c 2.812 0 4.219 -1.407 3.408 -4.182 c -0.889 -2.767 -4.076 -6.781 -8.305 -11.538 c -2.295 -2.712 -5.738 -5.633 -6.781 -7.094 c -1.461 -1.877 -1.043 -2.711 0 -4.381 C 74.687 44.53 86.684 27.631 87.935 21.894" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: currentColor; fill-rule: evenodd; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />\n	</g>\n</svg>\n				</a>\n			</div>\n		</div>\n\n	</div>\n	</main>\n\n\n</div>\n<footer class="footer">\n	<div class="container">\n		<div class="footer__wrapper">\n			<div class="footer__left">\n				<a href="/" class="footer__logo">\n					<img src="' +
+((__t = (__webpack_require__(/*! @/img/theme/logo.svg */ "./src/img/theme/logo.svg"))) == null ? '' : __t) +
+'" alt="NOQO" class="" />\n				</a>\n				<div class="footer__copyright">\n					2025. Noqo, все права защищены\n				</div>\n			</div>\n			<div class="footer__menu">\n				<div class="footer__nav">\n				<ul>\n					<li>\n						<a href="#">NOQO Mini</a>\n					</li>\n					<li>\n						<a href="#">NOQO Nasty</a>\n					</li>\n					<li>\n						<a href="#">NOQO</a>\n					</li>\n				</ul>\n			</div>\n\n			<div class="footer__nav">\n				<ul>\n					<li>\n						<a href="./product.html">Продукты</a>\n					</li>\n					<li>\n						<a href="./buy.html">Где купить</a>\n					</li>\n					<li>\n						<a href="./about.html">Партнерам</a>\n					</li>\n					<li>\n						<a href="./news.html">Новости</a>\n					</li>\n				</ul>\n			</div>\n			</div>\n\n			<div class="footer__right">\n				<div class="footer__connect">\n					<a href="tel:84950110969" class="footer__phone text-gradient">\n						8 (495) 011 09 69\n					</a>\n					<a target="_blank" href="https://t.me/B5vape_bot" rel="nofollow noopener" aria-label="telegram" class="footer__social footer__social_tg">\n						<svg width="48px" height="48px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">\n	<path d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z" fill="currentColor"/>\n</svg>\n					</a>\n\n				</div>\n				<div class="footer__btn">\n					<a class="footer__link-partner" href="./index.html#callback" data-to="callback" id="footer_nav_pertners">\n						<span class="footer__link-partner-icon"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-briefcase"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /><path d="M12 12l0 .01" /><path d="M3 13a20 20 0 0 0 18 0" /></svg>\n</span>\n						Стать партнером\n					</a>\n				</div>\n			</div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n		\n\n\n\n		</div>\n	</div>\n</footer>\n<div class="agecheck js-agecheck">\n	<div class="agecheck__block">\n		<img src="' +
+((__t = (__webpack_require__(/*! @/img/theme/logo.svg */ "./src/img/theme/logo.svg"))) == null ? '' : __t) +
+'" alt="NOQO" class="agecheck__logo" />\n		<div class="text-gradient agecheck__title">ВАМ БОЛЬШЕ 18&nbsp;ЛЕТ?</div>\n		<div class="agecheck__txt">Продукция, представленная на сайте, предназначена для лиц, достигших <nobr>18-летнего</nobr> возраста.</div>\n		<div class="agecheck__btn-wrap">\n		<button class="btn btn--lg agecheck__btn-ok js-agecheck-ok">ДА</button>\n		<a href="https://www.google.com/" class="btn btn--lg agecheck__btn-no js-agecheck-no">НЕТ, УЙТИ</a>\n		</div>\n	</div>\n</div>\n\n<noindex>\n	<div class="cookies js-cookies" >\n	<div class="cookies__title">Используем <b>cookies</b> для улучшения работы сайта. Оставаясь с нами, вы соглашаетесь на использование <a href="https://inflave.com/wp-content/uploads/2024/02/politika_konfidenczialnosti_i_obrabotki_personalnyh_dannyh_pri.pdf" target="_blank" class="cookies__link">файлов cookie</a></div>\n	<button class="btn-reset btn btn--xxs cookies__btn">ОК</button>\n</div>\n</noindex>\n\n' +
+((__t = ( htmlWebpackPlugin.tags.headTags )) == null ? '' : __t) +
+'\n\n</body>\n\n</html>\n';
+
+}
+return __p
+};
+
+
+/***/ })
+
+},
+/******/ __webpack_require__ => { // webpackRuntimeModules
+/******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+/******/ __webpack_require__.O(0, ["vendors","main"], () => (__webpack_exec__("./config/entry/pages/news-inner.js")));
+/******/ var __webpack_exports__ = __webpack_require__.O();
+/******/ }
+]);
+//# sourceMappingURL=news-inner.js.map
