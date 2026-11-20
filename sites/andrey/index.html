@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="fonts/BebasNeueBold.woff2" as="font" type="font/woff" crossorigin>
+    
+    <link rel="preload" href="css/fonts.css" as="style">
+    <!--<link rel="stylesheet" href="css/fonts.css">-->
+    <link rel="stylesheet" href="css/fonts.css" media="all">
+<!--    <link rel="stylesheet" href="css/main.min.css" media="all">-->
+    <link rel="stylesheet" href="css/main.css" media="all">
+
+    
+    <link rel="icon" href="img/icon-32x32.png" sizes="32x32">
+    <link rel="icon" href="/img/icon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="img/icon-180x180.png">
+    
+    <meta name="msapplication-TileImage" content="img/icon-270x270.png">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>2D ХУДОЖНИК АНДРЕЙ ИВАХНЕНКО</title>
+    
+    
+    <script>document.documentElement.className="js";
+    var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",
+        document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");
+    
+    
+    </script>
+
+    <script>
+
+
+
+         window.onload = function() {
+             var $preloader = $('.page-preloader'),
+                 $spinner = $preloader.find('.spinner');
+
+            // var $menu = $('.navbar-fixed-top');
+            // $menu.css("top", "-200px");
+
+             $spinner0 = $preloader.find('.spinner0');
+             $spinner.fadeOut();
+             $spinner0.fadeOut();
+             $preloader.delay(0).fadeOut('slow');
+             window.loaded = true;
+
+          //   $menu.delay(500).animate({top: "0"}, 400);
+
+
+
+
+
+         };
+    </script>
+    <style>
+        .page-preloader {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #000;
+            z-index: 10000;
+        }
+        .page-preloader .spinner {
+            top: 50%;
+            left: 50%;
+            position: fixed;
+            width: 126px;
+            height: 1.5em;
+            margin-left: -63px;
+            margin-top: 80px;
+            color: #FF1142;
+            text-align: left;
+            z-index: -1;
+            font-weight: 800;
+            font-size: 1.3em;
+            line-height: 22px;
+            padding-top: 0;
+            display: inline-block;
+            letter-spacing: 2px;
+
+            text-align: center;
+
+
+
+        }
+
+        .page-preloader .spinner0 {
+            top: 50%;
+            left: 50%;
+            position: fixed;
+            width: 126px;
+            height: 120px;
+            margin-left: -63px;
+            margin-top: -60px;
+
+
+
+        }
+
+        #l-anim {
+            transform: scaleY(0);
+            -moz-transform: scaleY(0);
+            -webkit-transform: scaleY(0);
+            -o-transform: scaleY(0);
+            -ms-transform: scaleY(0);
+            animation: preloader 3s linear infinite;
+            -moz-animation: preloader 3s linear infinite;
+            -webkit-animation: preloader 3s linear infinite;
+            -o-animation: preloader 3s linear infinite;
+            -ms-animation: preloader 3s linear infinite;
+            transform-origin: top left;
+            -moz-transform-origin: top left;
+            -webkit-transform-origin: top left;
+            -o-transform-origin: top left;
+            -ms-transform-origin: top left;
+        }
+
+
+        @-moz-keyframes preloader {
+        0, 100% {
+            -moz-transform: scaleY(0);
+
+        }
+
+
+        50% {
+            -moz-transform: scaleY(1);
+        }
+        }
+
+        @-webkit-keyframes preloader {
+        0, 100% {
+            -webkit-transform: scaleY(0);
+
+        }
+
+
+        50% {
+            -webkit-transform: scaleY(1);
+        }
+        }
+
+        @-o-keyframes preloader {
+        0, 100% {
+            -o-transform: scaleY(0);
+
+        }
+
+
+        50% {
+            -o-transform: scaleY(1);
+        }
+        }
+
+        @-ms-keyframes preloader {
+        0, 100% {
+            -ms-transform: scaleY(0);
+
+        }
+
+
+        50% {
+            -ms-transform: scaleY(1);
+        }
+        }
+
+        @keyframes preloader {
+        0, 100% {
+            transform: scaleY(0);
+
+        }
+
+
+        50% {
+            transform: scaleY(1);
+        }
+        }
+
+
+
+
+
+
+
+        .page-preloader .spinner svg,
+        .page-preloader .spinner0 svg{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="loading index">
+<div class="main">
+    <div class="scroll-container js-scroll-container pf" >
+        <main>
+
+<div class="page-preloader" >
+    <div class="spinner0">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 152 157" style="enable-background:new 0 0 152 157;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+    .st1{fill:none;stroke:#FFFFFF;stroke-width:3;}
+</style>
+<g id="Слой_1">
+	<rect width="152" height="157"/>
+</g>
+<g id="filled-letters">
+	<g>
+		<path class="st0" d="M88.8,155.1H64.5l-4.2-27.8H30.8l-4.2,27.8H4.5L29.1,1.8h35.2L88.8,155.1z M33.9,106.5h23.2L45.5,29
+			L33.9,106.5z"/>
+	</g>
+	<rect x="121.5" y="1" class="st0" width="24" height="154.5"/>
+</g>
+<g id="l-anim">
+	<rect x="7" y="-0.5" width="142.5" height="127.5"/>
+</g>
+<g id="outlines">
+	<g>
+		<path class="st1" d="M88.8,155.1H64.5l-4.2-27.8H30.8l-4.2,27.8H4.5L29.1,1.8h35.2L88.8,155.1z M33.9,106.5h23.2L45.5,29
+			L33.9,106.5z"/>
+		<path class="st1" d="M121.9,1.8H146v153.2h-24.1V1.8z"/>
+	</g>
+</g>
+</svg>
+
+
+    </div>
+    <div class="spinner">
+        Loading
+
+    </div></div>
+
+
+
+<header class="header">
+    <nav class="navbar navbar-expand-sm">
+
+        <div class="container">
+
+
+            <button class="navbar-toggler btn--sandwich" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="btn--sandwich__line line1"></span>
+                <span class="btn--sandwich__line line2"></span>
+                <span class="btn--sandwich__line line3"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div>
+                    <ul  class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav__link nav-link--animated js_scroll-link" data-text="Обо мне" href="#about"><span class="nav-link--animated__span">Обо мне</span></a></li>
+
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav__link nav-link--animated nav-link--with-dropdown  nav-link" href="#" id="pfDropdown" data-text="Портфолио" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="nav-link--animated__span">Портфолио</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="pfDropdown">
+                            <a class="dropdown-item" href="#">Арт</a>
+                            <a class="dropdown-item" href="#">Графический дизайн</a>
+
+                        </div>
+                    </li>
+
+
+
+
+
+                  <!--  <a class="nav-item nav-link nav__link nav-link&#45;&#45;animated js_scroll-link" data-text="Услуги" href="#services"><span class="nav-link&#45;&#45;animated__span">Услуги</span></a>-->
+
+                        <li class="nav-item dropdown">
+                    <a class="nav-link nav__link  nav-link--animated js_scroll-link" data-text="Контакты" href="#contacts"><span class="nav-link--animated__span">Контакты</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<div class="soc-icons">
+
+        <a class="soc-icons__link" href="#"><img src="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 430.1 430.1' style='enable-background:new 0 0 430.1 430.1;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23FFFFFF;%7D%0A%3C/style%3E%3Cg%3E%3Cpath id='Behance' class='st0' d='M388.4,119.1H280.7V92.4h107.8L388.4,119.1C388.4,119.1,388.4,119.1,388.4,119.1z M208.9,228.9 c7,10.8,10.4,23.8,10.4,39.2c0,15.9-3.9,30.1-11.9,42.7c-5.1,8.3-11.4,15.4-18.9,21c-8.5,6.5-18.6,11-30.2,13.4 c-11.6,2.4-24.2,3.6-37.8,3.6H0V81.2h129.3c32.6,0.5,55.7,10,69.3,28.5c8.2,11.4,12.2,25,12.2,40.9c0,16.4-4.1,29.5-12.4,39.4 c-4.6,5.6-11.4,10.6-20.4,15.2C191.7,210.2,202,218.1,208.9,228.9z M61.7,186.8h56.6c11.6,0,21-2.2,28.3-6.6 c7.2-4.4,10.9-12.3,10.9-23.5c0-12.4-4.8-20.7-14.4-24.7c-8.2-2.8-18.8-4.2-31.6-4.2H61.7V186.8z M163,264.3 c0-13.9-5.7-23.5-17-28.7c-6.3-2.9-15.3-4.4-26.8-4.5H61.7v71.3h56.6c11.6,0,20.6-1.5,27.1-4.7C157.1,291.9,163,280.8,163,264.3z M428.4,220.7c1.3,8.8,1.9,21.5,1.7,38.1H290.5c0.8,19.3,7.4,32.7,20,40.4c7.6,4.8,16.8,7.2,27.6,7.2c11.4,0,20.7-2.9,27.8-8.8 c3.9-3.1,7.3-7.6,10.3-13.2h51.2c-1.3,11.4-7.5,22.9-18.6,34.6c-17.2,18.6-41.2,28-72.1,28c-25.5,0-48-7.9-67.5-23.6 c-19.5-15.8-29.2-41.3-29.2-76.8c0-33.3,8.8-58.7,26.4-76.4c17.7-17.8,40.5-26.6,68.6-26.6c16.7,0,31.7,3,45.1,9 c13.4,6,24.4,15.4,33.1,28.4C421,192.5,426.1,205.7,428.4,220.7z M378.1,225.7c-0.9-13.3-5.4-23.4-13.4-30.3 c-7.9-6.9-17.9-10.4-29.7-10.4c-12.9,0-22.8,3.7-29.9,11c-7.1,7.3-11.5,17.2-13.4,29.7L378.1,225.7L378.1,225.7z'/%3E%3C/g%3E%3C/svg%3E" class="img-fluid"></a>
+
+        <a class="soc-icons__link" href="#"><img src="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Слой_1' text-rendering='geometricPrecision' shape-rendering='geometricPrecision' image-rendering='optimizeQuality' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 3333 1980' style='enable-background:new 0 0 3333 1980;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23FFFFFF;%7D%0A%3C/style%3E%3Cpath class='st0' d='M3257,134c23-77,0-134-110-134h-365c-93,0-135,49-159,103c0,0-185,452-448,746c-85,85-124,112-170,112 c-23,0-58-27-58-104V135c0-93-26-134-103-134h-573c-58,0-93,43-93,84c0,88,131,108,145,355v537c0,118-21,139-68,139 c-124,0-424-454-603-974C617,41,582,0,489,0H124C20,0-1,49-1,103c0,97,124,576,576,1209c301,433,726,667,1112,667 c232,0,260-52,260-142v-327c0-104,22-125,95-125c54,0,147,27,363,236c247,247,288,358,427,358h365c104,0,156-52,126-155 c-33-102-151-251-308-427c-85-100-212-209-251-263c-54-70-39-100,0-162c0,0,444-626,491-838H3257z'/%3E%3C/svg%3E%0A" class="img-fluid"></a>
+
+        <a class="soc-icons__link" href="#"><img src="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23FFFFFF;%7D%0A%3C/style%3E%3Cg%3E%3Cg%3E%3Cpath class='st0' d='M448,0H64C28.7,0,0,28.7,0,64v384c0,35.3,28.7,64,64,64h192V336h-64v-80h64v-64c0-53,43-96,96-96h64v80h-32 c-17.7,0-32-1.7-32,16v64h80l-32,80h-48v176h96c35.3,0,64-28.7,64-64V64C512,28.7,483.3,0,448,0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E" class="img-fluid"></a>
+
+        <a class="soc-icons__link" href="#"><img src="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Слой_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 511 511' style='enable-background:new 0 0 511 511;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23FFFFFF;%7D%0A%3C/style%3E%3Cpath class='st0' d='M510.5,150.2c-1.2-27.2-5.6-45.8-11.9-62c-6.5-17.2-16.5-32.5-29.5-45.3c-12.8-13-28.3-23.1-45.2-29.4 c-16.3-6.3-34.8-10.7-62-11.9C334.5,0.3,325.8,0,256.4,0s-78.1,0.3-105.3,1.5c-27.2,1.2-45.8,5.6-62,11.9 C72,19.9,56.6,29.8,43.8,42.9c-13,12.8-23.1,28.3-29.4,45.2c-6.3,16.3-10.7,34.8-11.9,62c-1.3,27.4-1.6,36-1.6,105.4 s0.3,78.1,1.5,105.3c1.2,27.2,5.6,45.8,11.9,62c6.5,17.2,16.6,32.5,29.5,45.3c12.8,13,28.3,23.1,45.2,29.4 c16.3,6.3,34.8,10.7,62,11.9c27.2,1.2,35.9,1.5,105.3,1.5s78.1-0.3,105.3-1.5c27.2-1.2,45.8-5.6,62-11.9 c34.3-13.3,61.5-40.4,74.8-74.8c6.3-16.3,10.7-34.8,11.9-62c1.2-27.3,1.5-35.9,1.5-105.3S511.7,177.5,510.5,150.2z M464.5,358.9 c-1.1,25-5.3,38.4-8.8,47.4c-8.6,22.3-26.3,39.9-48.5,48.5c-9,3.5-22.6,7.7-47.4,8.8c-27,1.2-35,1.5-103.2,1.5s-76.4-0.3-103.2-1.5 c-25-1.1-38.4-5.3-47.4-8.8c-11.1-4.1-21.2-10.6-29.3-19.1c-8.5-8.3-15-18.3-19.1-29.3c-3.5-9-7.7-22.6-8.8-47.4 c-1.2-27-1.5-35-1.5-103.2s0.3-76.4,1.5-103.2c1.1-25,5.3-38.4,8.8-47.4C61.6,94,68.1,84,76.7,75.8c8.3-8.5,18.3-15,29.3-19.1 c9-3.5,22.6-7.7,47.4-8.8c27-1.2,35-1.5,103.2-1.5c68.3,0,76.4,0.3,103.2,1.5c25,1.1,38.4,5.3,47.4,8.8 c11.1,4.1,21.2,10.6,29.3,19.1c8.5,8.3,15,18.3,19.1,29.4c3.5,9,7.7,22.6,8.8,47.4c1.2,27,1.5,35,1.5,103.2S465.7,331.9,464.5,358.9 z'/%3E%3Cpath class='st0' d='M256.4,124.3c-72.5,0-131.3,58.8-131.3,131.3S184,386.8,256.4,386.8c72.5,0,131.3-58.8,131.3-131.3 S328.9,124.3,256.4,124.3z M256.4,340.7c-47,0-85.2-38.1-85.2-85.2s38.1-85.2,85.2-85.2c47,0,85.2,38.1,85.2,85.2 S303.5,340.7,256.4,340.7z'/%3E%3Cpath class='st0' d='M423.6,119.1c0,16.9-13.7,30.6-30.6,30.6c-16.9,0-30.6-13.7-30.6-30.6c0-16.9,13.7-30.6,30.6-30.6 C409.8,88.4,423.6,102.2,423.6,119.1z'/%3E%3C/svg%3E" class="img-fluid"></a>
+
+</div>
+
+
+
+<div class="section intro">
+    <div class="container position-relative">
+        <div class="row">
+            <h1 class="intro__h1">ANDREY IVAKHNENKO</h1>
+        <div class="col-12 col-md-8 intro__pic-wrap">
+            <div id="canvas-wrap" class=" position-relative" >
+                <canvas id="canvas"></canvas>
+          <img src="img/44.jpg" id="imgTarget" class="img-fluid" style="">
+            </div>
+        </div>
+        <div class="col-12 col-md-4 intro__text-wrap">
+
+            <h2 class="intro__h2">2D ХУДОЖНИК</h2>
+            
+            <div class="intro__main-text">
+                <ul class="list-unstyled">
+                    <li>Digital art</li>
+                    <li>Concept art</li>
+                    <li>Цифровое искусство</li>
+                </ul>
+            </div>
+            <div class="intro__btn-wrap">
+                <a data-text="Заказать" class="btn btn-default nav-link--animated"><span class="nav-link--animated__span">Заказать</span></a>
+            </div>
+        </div>
+    </div></div>
+
+
+    <div class="line-container  d-none d-md-none d-sm-none d-lg-block d-xl-block">
+        <div class="line">
+        </div>
+    </div>
+
+</div>
+
+<!--test-->
+
+
+
+
+<div class="section section--default slogan">
+    <div class="slogan__line">
+<div class="container  train position-relative">
+    <div class="slogan__line-inner">
+        <span class="slogan__text-outlined">Воплощаю</span> <span class="slogan__text-white">идеи</span><span class="slogan__text-outlined">&nbsp;в жизнь. Воплощаю</span> <span class="slogan__text-white">идеи</span><span class="slogan__text-outlined"> в жизнь. Воплощаю</span> <span class="slogan__text-white">идеи</span><span class="slogan__text-outlined"> в жизнь.</span></div>
+   <!--     <span class="slogan__text-white">Вопрощаю идеи в жизнь</span>-->
+</div>
+
+    </div>
+
+</div>
+<div class="section section--default-with-bg about">
+
+    <div class="about__content">
+       <div class="container"><a name="about"></a>
+           <h2 class="h2">Обо мне</h2>
+           <div class="row">
+               <div class="col-12 col-md-5">
+                   <div class="about__photo  position-relative">
+                       <div class="img--animation-resize">
+                       <img src="img/me.jpg" class="img-fluid">
+                       </div>
+
+                       <div class="about__slogan d-none d-lg-block">
+                           <img src="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Слой_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 90.4 90.7' style='enable-background:new 0 0 90.4 90.7;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23FFFFFF;%7D%0A%3C/style%3E%3Cg%3E%3Cpath class='st0' d='M49.7,10.5l0.1-1.2l-3-0.2l-0.1,1.2l-1.4-0.1l0.2-2.5l0.6,0c0.3-0.3,0.4-0.6,0.4-1.2L47.3,0l4,0.3l-0.6,7.8 l0.6,0.1l-0.2,2.5L49.7,10.5z M47.9,6.7c-0.1,0.7-0.2,1-0.5,1.2L49.2,8l0.5-6.5l-1.2-0.1L47.9,6.7z'/%3E%3Cpath class='st0' d='M55.6,3.3c0.4-1.4,1.4-2,2.7-1.6c1.3,0.4,1.8,1.4,1.4,2.8l-1.3,4.5c-0.4,1.4-1.4,2-2.7,1.6 c-1.3-0.4-1.8-1.4-1.4-2.8L55.6,3.3z M55.6,8.4c-0.2,0.6,0,0.9,0.5,1.1c0.4,0.1,0.8,0,1-0.6l1.4-4.7c0.2-0.6,0-0.9-0.5-1.1 c-0.4-0.1-0.8,0-1,0.6L55.6,8.4z'/%3E%3Cpath class='st0' d='M67.3,8l-0.2,0.3c-0.4,0.8-1,1.2-1.7,1.2c0.5,0.6,0.5,1.4,0,2.2l-0.3,0.7c-0.7,1.2-1.7,1.6-2.9,0.9l-2-1 l4.2-8.1l1.9,1C67.7,5.8,68,6.8,67.3,8z M63.4,9.3l-1.3,2.5l0.7,0.4c0.4,0.2,0.8,0.1,1.1-0.5l0.4-0.7c0.4-0.7,0.3-1.1-0.3-1.4 L63.4,9.3z M65.2,6L64,8.1l0.5,0.3c0.5,0.2,0.9,0.2,1.2-0.5L66,7.5c0.3-0.6,0.2-0.9-0.2-1.2L65.2,6z'/%3E%3Cpath class='st0' d='M70.8,12.5l1.5,1.2l-0.8,1L70,13.5l-1.7,2.1l1.9,1.5l-0.8,1l-3.1-2.4L72,8.6l3.1,2.4l-0.8,1l-1.9-1.5 L70.8,12.5z'/%3E%3Cpath class='st0' d='M79.3,18.7l-0.9,0.8c-1.1,1-2.2,1-3.1-0.1l-0.4-0.5l-2.6,2.3L71.4,20l6.8-6l1.4,1.6 C80.5,16.7,80.4,17.7,79.3,18.7z M78.2,16l-2.3,2l0.4,0.5c0.3,0.3,0.6,0.4,1.1,0l1-0.9c0.5-0.4,0.5-0.8,0.2-1.1L78.2,16z'/%3E%3Cpath class='st0' d='M75.6,25.2l7.8-4.6l0.7,1.2l-2.9,1.7l0.3,0.6c0.7,1.2,0.4,2.2-0.9,3l-1,0.6c-1.3,0.7-2.3,0.5-3-0.7L75.6,25.2z M77.8,26.4c0.2,0.4,0.5,0.5,1.1,0.2l1.2-0.7c0.6-0.3,0.6-0.6,0.4-1l-0.3-0.6l-2.7,1.6L77.8,26.4z'/%3E%3Cpath class='st0' d='M87.2,27.8l1.5,4.2l-1.2,0.4L87,31l-7.3,2.7l-0.5-1.3l7.3-2.7L86,28.2L87.2,27.8z'/%3E%3Cpath class='st0' d='M86.2,37.9l0.3,1.9l-1.3,0.2l-0.3-1.9l-2.6,0.4l0.4,2.4l-1.3,0.2l-0.6-3.8l9-1.5l0.7,3.8L89.1,40l-0.4-2.4 L86.2,37.9z'/%3E%3Cpath class='st0' d='M79,55.2l1.2,0.3l0.7-3l-1.2-0.3l0.3-1.4l2.4,0.6L82.4,52c0.2,0.3,0.6,0.5,1.1,0.6l6.4,1.9l-1,3.9l-7.6-1.9 l-0.1,0.6l-2.4-0.6L79,55.2z M83.1,54c-0.7-0.2-0.9-0.4-1.1-0.7l-0.4,1.8l6.3,1.6l0.3-1.2L83.1,54z'/%3E%3Cpath class='st0' d='M78.3,60.5l0.6-1.3l8.2,4l-0.6,1.1l-5.2-2.5l1.6,1.3l2.9,2.7l-0.7,1.4l-8.2-4l0.6-1.2l5.8,2.8l-1.8-1.5 L78.3,60.5z'/%3E%3Cpath class='st0' d='M79.2,72c0.7,0.5,1,0.4,1.3,0c0.3-0.4,0.3-0.8-0.3-1.1l-0.6-0.4l0.8-1l0.5,0.4c1.2,0.9,1.4,1.9,0.5,3 s-2,1.2-3.1,0.3L78.2,73c-0.8-0.6-1.1-1.2-0.9-1.9c-0.7,0.4-1.4,0.2-2.1-0.4l-0.6-0.4c-1.2-0.9-1.4-2-0.5-3.1 c0.9-1.1,2-1.2,3.1-0.3l0.8,0.6l-0.8,1.1l-0.9-0.7c-0.5-0.4-0.9-0.3-1.2,0c-0.3,0.4-0.3,0.7,0.4,1.2l0.6,0.4c0.7,0.5,1.1,0.5,1.5,0 l0.2-0.3l1,0.8l-0.3,0.3c-0.3,0.4-0.3,0.8,0.2,1.3L79.2,72z'/%3E%3Cpath class='st0' d='M67.6,74.1l1.1-1l1.3,1.1l1.3-1.2l-0.9-1.4l1-0.9l5,7.8l-1.6,1.4L67.6,74.1z M72,74.1l-1,0.9l3.6,3L72,74.1z' /%3E%3Cpath class='st0' d='M64.4,76.2l1.3-0.7l4.6,7.9L69.1,84l-2.9-5l0.6,2l0.9,3.8l-1.4,0.8l-4.6-7.9l1.1-0.7l3.2,5.5l-0.6-2.2 L64.4,76.2z M68.7,86.6c-0.2-0.4-0.1-0.6,0.3-0.8c0.3-0.2,0.6-0.2,0.8,0.2l0.8-0.4c-0.5-0.8-1.2-1-2-0.5c-0.9,0.5-1,1.3-0.6,2 L68.7,86.6z'/%3E%3Cpath class='st0' d='M57.8,79.4l1.4-0.5l2.9,8.6L60.7,88l-1.3-3.7l-1.5,0.5l1.3,3.7L57.8,89l-2.9-8.6l1.4-0.5l1.3,3.7l1.5-0.5 L57.8,79.4z'/%3E%3Cpath class='st0' d='M43.1,81.5l1.4,0.1l-0.8,9.1l-4.5-0.4l0.8-9.1l1.5,0.1l-0.6,7.8l1.6,0.1L43.1,81.5z'/%3E%3Cpath class='st0' d='M31.3,86.2l0.3-1.1c0.4-1.4,1.3-2,2.7-1.6l0.7,0.2l0.9-3.3l1.4,0.4l-2.5,8.8l-2-0.6 C31.4,88.5,30.9,87.6,31.3,86.2z M33.8,87.9l0.8-3L34,84.7c-0.4-0.1-0.7,0-0.9,0.6l-0.4,1.3c-0.2,0.6,0,0.9,0.4,1L33.8,87.9z'/%3E%3Cpath class='st0' d='M27.9,84.9c-0.7,1.3-1.7,1.7-3,1.1c-1.3-0.6-1.6-1.7-0.9-3l2.1-4.2c0.7-1.3,1.7-1.7,3-1.1s1.6,1.7,0.9,3 L27.9,84.9z M28.8,79.9c0.3-0.6,0.1-0.9-0.3-1.1c-0.4-0.2-0.8-0.1-1.1,0.5l-2.2,4.4c-0.3,0.6-0.1,0.9,0.3,1.1 c0.4,0.2,0.8,0.1,1.1-0.5L28.8,79.9z'/%3E%3Cpath class='st0' d='M22.2,74.6l0.4,0.3c1.1,0.9,1.1,2,0.2,3.1l-1.6,1.9c-0.9,1.1-2,1.3-3.1,0.4L17.8,80l-0.7,0.8L16,79.9l0.7-0.8 l-0.4-0.3c-1.1-0.9-1.1-2-0.2-3.1l1.6-1.9c0.9-1.1,2-1.3,3.1-0.4l0.4,0.3l0.7-0.8l1.1,0.9L22.2,74.6z M17.5,78.1l2.8-3.5L20,74.3 c-0.4-0.3-0.7-0.3-1.1,0.2l-1.7,2.1c-0.4,0.5-0.4,0.9,0,1.1L17.5,78.1z M18.6,79l0.4,0.3c0.4,0.3,0.7,0.3,1.1-0.2l1.7-2.1 c0.4-0.5,0.4-0.9,0-1.2l-0.4-0.3L18.6,79z'/%3E%3Cpath class='st0' d='M13,71.3l-1.2-1.5l1-0.8l1.2,1.5l2.1-1.6l-1.5-1.9l1-0.8l2.4,3.1l-7.2,5.6l-2.4-3.1l1-0.8l1.5,1.9L13,71.3z'/%3E%3Cpath class='st0' d='M9.2,61.7l1.1-0.6c1.3-0.7,2.4-0.4,3,0.8s0.2,2.3-1,2.9L8,67.1c-1.3,0.7-2.4,0.4-3-0.8c-0.6-1.2-0.2-2.3,1-2.9 L6.9,63l0.6,1.2l-0.9,0.5C6,64.9,6,65.3,6.2,65.7s0.6,0.5,1.1,0.2l4.4-2.3c0.6-0.3,0.7-0.7,0.4-1.1S11.5,62,11,62.3l-1.2,0.6 L9.2,61.7z'/%3E%3Cpath class='st0' d='M6.8,54.7l1.2-0.3c1.4-0.4,2.4,0,2.8,1.4s-0.2,2.3-1.6,2.7l-4.5,1.4c-1.4,0.4-2.4,0-2.8-1.4s0.2-2.3,1.6-2.7 l0.8-0.3l0.4,1.3L3.7,57c-0.6,0.2-0.8,0.5-0.6,1s0.4,0.6,1.1,0.5L8.8,57c0.6-0.2,0.8-0.5,0.6-1c-0.1-0.4-0.4-0.6-1.1-0.5L7.2,56 L6.8,54.7z'/%3E%3Cpath class='st0' d='M9.4,49.7l0.1,1.5L0.4,52l-0.1-1.3l5.7-0.6l-2-0.3l-3.9-0.8L0,47.5l9.1-0.9l0.1,1.3l-6.4,0.6l2.3,0.4L9.4,49.7 z'/%3E%3Cpath class='st0' d='M2.2,43.3c-1.4-0.1-2.2-1-2.1-2.4c0.1-1.4,1-2.1,2.5-1.9l4.7,0.5c1.4,0.1,2.2,1,2.1,2.4 c-0.1,1.4-1,2.1-2.5,1.9L2.2,43.3z M7.1,42.3c0.6,0.1,0.9-0.2,1-0.7c0-0.5-0.2-0.8-0.8-0.8l-4.9-0.5c-0.6-0.1-0.9,0.2-1,0.7 c0,0.5,0.2,0.8,0.8,0.8L7.1,42.3z'/%3E%3Cpath class='st0' d='M10.4,35.6L10,37l-8.7-2.6L1.7,33l3.7,1.1l0.5-1.6l-3.7-1.1L2.6,30l8.7,2.6l-0.4,1.4l-3.7-1.1l-0.5,1.6 L10.4,35.6z'/%3E%3Cpath class='st0' d='M14.6,26l-0.7,1.3l-1.6-0.6l-0.8,1.5l1.3,1l-0.6,1.2l-7.3-5.6l1-1.8L14.6,26z M10.5,27.5l0.7-1.2l-4.4-1.6 L10.5,27.5z'/%3E%3Cpath class='st0' d='M14.7,23.5c0.4-0.5,0.5-0.7-0.2-1.3l-5.1-4.6l2.6-3.1l7,5.8l-0.9,1.1l-6-5l-0.8,1l4.1,3.6 c1.2,1.1,1.4,2,0.4,3.1l-0.1,0.2L14.7,23.5z'/%3E%3Cpath class='st0' d='M22.1,14.6c0.8,1.5,0.8,2.5-0.8,3.6l-0.8-1c0.6-0.4,0.8-0.8,0.5-1.4l0-0.1l-5.9-4.2l1.1-0.9l2.5,1.9l1.7,1.4 l-1.1-1.9l-1.4-2.8L19,8.3L22.1,14.6z'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cx='33.1' cy='6.6' r='2.5'/%3E%3C/g%3E%3C/svg%3E" class="img-fluid" alt="">
+                       </div>
+                   </div>
+
+               </div>
+
+
+               <div class="col-12 col-md-7 col-lg-5 offset-lg-2">
+                   <div class="about__text text text--bigger-xl position-relative opacity-0">
+                       <p>Меня зовут Андрей. Я профессиональный художник и дизайнер. Закончил художественную школу им. Святослава Рихтера в г. Москва. Получил диплом МГТА(МЭЛИ) по специальности "Графический дизайн". Я не стою на месте и постоянно учусь новому, прохожу курсы и тренинги, чтобы быть в курсе последних тенденций. Люблю нестандартные задачи, но с радостью возьмусь и за типовые проекты. Если тебе нужен качественный дизайн, ты в правильном месте :)</p>
+
+                   </div>
+               </div>
+           </div>
+       </div>
+
+
+
+
+    </div>
+
+</div>
+
+
+         <!--   <div id="bm"></div>-->
+
+<div class="section advantages section--default-with-bg">
+    <div class="container">
+    <div class="advantages__content">
+        <h2 class="h2">Почему я?</h2>
+
+        <div class="advantages__items-wrap">
+            <div class="advantages__item">
+
+                <div class="row align-items-center">
+                    <div class="col-3 col-md-2 d-none  d-md-flex"><div id="love" class="advantages__icon"></div></div>
+                    <div class="col-12   col-md-10 "><div class="advantages__title"> Я люблю свою работу</div>
+                        <div class="advantages__text text text--bigger-xl">
+                            В каждый заказ я вкладываю душу и стараюсь довести все до идеала. </div>
+                    </div>
+                </div>
+
+              </div>
+
+
+            <div class="advantages__item">
+
+                <div class="row align-items-center">
+                    <div class="col-3 col-md-2  d-none  d-md-flex">
+                        <div id="stable" class="advantages__icon"></div>
+                        <!--<div class="advantages__anim-icon">
+                        <img src="img/icon2.png" alt="" class="img-responsive" >
+                        <img src="img/icon2.gif" alt="" class="img-responsive" class="advantages__anim-icon-a" style="opacity: 0;" >
+                    </div>--></div>
+                    <div class="col-12 col-md-10"><div class="advantages__title">Я не подведу</div>
+                        <div class="advantages__text text text--bigger-xl">
+                            Ни разу не срывал дедлайны. Я не трачу Ваше время зря, если взял заказ - довожу его до конца.  </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="advantages__item">
+
+                <div class="row align-items-center">
+                    <div class="col-3 col-md-2  d-none  d-md-flex"><div id="draw" class="advantages__icon"></div></div>
+                    <div class="col-12 col-md-10"><div class="advantages__title">Я рисую всё</div>
+                        <div class="advantages__text text text--bigger-xl">
+                            Помогу воплотить в жизнь любые Ваши идеи. Чем сложнее и фантастичнее идея, тем интереснее её реализовывать. </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="advantages__item">
+
+                <div class="row align-items-center">
+                    <div class="col-3 col-md-2  d-none  d-md-flex"><div id="clients" class="advantages__icon"></div></div>
+                    <div class="col-12 col-md-10"><div class="advantages__title">524 довольных клиента</div>
+                        <div class="advantages__text text text--bigger-xl">
+                            Я работал как с физическими, так и с юридическими лицами и выполнял работы разного уровня сложности. </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="advantages__item">
+
+                <div class="row align-items-center">
+                    <div class="col-3 col-md-2  d-none  d-md-flex"><div id="edu" class="advantages__icon"></div></div>
+                    <div class="col-12 col-md-10"><div class="advantages__title">7 лет непрерывной работы по специальности.</div>
+                        <div class="advantages__text text text--bigger-xl">
+                            Я работал в офисе, но ушел на фриланс, чтобы сфокусироваться на клиентах и интересных мне задачах. </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    </div></div>
+
+
+
+
+
+
+
+<div class="section section--default-with-bg works">
+    <div class="container">
+    <h2 class="h2">Мои работы</h2>
+
+            <div class="works-slider">
+                <!--works-start-->
+
+                
+                            <div class="grid-wrap grid-on-index">
+                                <div class="grid">
+                <!--                    <a href="#" class="grid__item">
+                                        <div class="grid__item-bg"></div>
+                                        <div class="grid__item-wrap">
+                                            <img class="grid__item-img" src="img/1-sm.jpg" style="border: 2px solid green" alt="Some image" />
+                                        </div>
+                                        <h3 class="grid__item-title">Tour of my Life</h3>
+                                        <h4 class="grid__item-number">АКВАРЕЛЬ</h4>
+                                    </a>-->
+                
+                                    <a href="#" class="grid__item">
+                                        <div class="grid__item-bg"></div>
+                                        <div class="grid__item-wrap">
+                                            <img class="grid__item-img" src="img/2-sm.jpg" alt="Some image" />
+                                        </div>
+                                        <h3 class="grid__item-title">One day in Africa</h3>
+                                        <h4 class="grid__item-number">PHOTOSHOP</h4>
+                                    </a>
+                
+                                    <a href="#" class="grid__item">
+                                        <div class="grid__item-bg"></div>
+                                        <div class="grid__item-wrap">
+                                            <img class="grid__item-img" src="img/3-sm.jpg" alt="Some image" />
+                                        </div>
+                                        <h3 class="grid__item-title">Wrecked and happy</h3>
+                                        <h4 class="grid__item-number">ТУШЬ</h4>
+                                    </a>
+                
+                                    <a href="#" class="grid__item">
+                                        <div class="grid__item-bg"></div>
+                                        <div class="grid__item-wrap">
+                                            <img class="grid__item-img" src="img/5-sm.jpg" alt="Some image" />
+                                        </div>
+                                        <h3 class="grid__item-title">The silent thief</h3>
+                                        <h4 class="grid__item-number">ВЕКТОР</h4>
+                                    </a>
+                
+                
+                                </div>
+                            </div><!-- /grid-wrap -->
+
+                <!--works-fin-->
+                <div class="works__btn-wrap opacity-0">
+                    <a data-text="Смотреть все" class="btn btn-default nav-link--animated"><span class="nav-link--animated__span">Смотреть все</span></a>
+                </div>
+            </div>
+    </div></div>
+
+
+
+
+            <div class="section section--default-with-bg reviews">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                         <h2 class="h2">Отзывы</h2>
+
+                            <div class="row cards">
+                                <div class="col-12 col-lg-4 card bg-transparent opacity-0">
+                                    <div class="review-item card-body d-flex flex-column">
+                                        <div class="review-item__text text"><p>
+                                            Мы работали с Андреем над проектом по рисованию этикеток. Все было выполнено в срок и очень качественно.</p>
+                                            <p>
+                            
+                                            Андрей рисует сам, а не копирует с клипартов.</p>
+                            <p>
+                                            Мы получили уникальный дизайн за нормальную стоимость. ОБязательно обратимся к Андрею и в следующий раз</p>
+                                        </div>
+                                        <div class="review-item__signature mt-auto text-right">
+                                            Алексей Иванов,
+                                            ОАО «Звезда»
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 card bg-transparent opacity-0">
+                                    <div class="review-item card-body d-flex flex-column">
+                                        <div class="review-item__text text"><p>
+                                            Спасибо за отличную работу! Работа по исполнению заказа безупречна! Отдельная благодарность за профессионализм и понимание желаний клиента, и, что важно, их реализацию. Молодцы! Оставайтесь такими же совершенными! Удачи и процветания!</p>
+                                        </div>
+                                        <div class="review-item__signature mt-auto text-right">
+                                            Иван Поддубный,
+                                            частный клиент
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 card bg-transparent opacity-0">
+                                    <div class="review-item card-body d-flex flex-column">
+                                        <div class="review-item__text text"><p>
+                                        Выражаю благодарность Андрею за хорошо сделанную работу. Работать с ним было легко, сделал все в срок и ответсвтенно.</p>
+                            <p>
+                                        В дальшейшем буду обращаться только к нему.</p>
+                                        </div>
+                                        <div class="review-item__signature mt-auto text-right">
+                                        Елена Рождественская,
+                                            ИП Рождественка</div>
+                            
+                            
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section section--default-with-bg contacts">
+                <div class="section__video-bg d-none d-lg-block d-xl-block">
+                    <video autoplay="" loop="" muted="" playsinline="" width="100%" height="auto"  src="./video/bg.mp4"  >
+                        <source  type="video/mp4" src="./video/bg.mp4">
+                    </video>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12"><a name="contacts"></a><h2 class="h2">Контакты</h2></div>
+                        <div class="col-12 col-md-6">
+
+                            <div class="contacts__text">
+                                <p>Вы можете связаться со мной через контакты, написать в соцсетях или отправить сообщение через форму обратной связи. </p>
+                            </div>
+                            <div class="contacts__links">
+                                <a class="soc__link--line soc--line-be" data-text="/ Ivakhnenko_design" href="#"><span>/ Ivakhnenko_design</span></a><br>
+
+                                <a class="soc__link--line soc--line-vk" data-text="/ ivakhnenko_design" href="#"><span>/ ivakhnenko_design</span></a><br>
+                                <a class="soc__link--line soc--line-fb" data-text="/ Ivakhnenko.design" href="#">/ Ivakhnenko.design</a><br>
+                                <a class="soc__link--line soc--line-insta" data-text="/ ivakhnenko_art" href="#">/ ivakhnenko_art</a>
+
+                            </div>
+                           
+                            
+                            
+                        </div>
+                        <div class="col-12 col-md-6">
+
+                            <div class="contacts__form-wrap">
+
+                                <h3 class="h3">Оставьте сообщение</h3>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Имя</label>
+                                        <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">E-mail</label>
+                                        <input type="email" class="form-control" id="exampleInputPassword1" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Сообщение</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                 <!--   <button type="submit" class="btn btn-primary">Submit</button>-->
+
+                                    <div class="form-group form-group--submit-outer">
+                                    <button type="submit" data-text="Отправить" class="btn btn-default nav-link--animated"><span class="nav-link--animated__span">Отправить</span></button></div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+    <!--content-for-works-slider-->
+
+    <!--content-for-works-slider-fin-->
+
+
+            
+            <div class="content">
+                <div class="content__item">
+                    <div class="content__item-intro">
+                        <img class="content__item-img" src="img/2.jpg"  alt="Some image" />
+            
+                        <div class="content__item-descr">
+                            <h2 class="content__item-title">Tour of my life</h2>
+                            <div class="content__item-text"><p>    Описание работы</p></div></div>
+            
+            
+                    </div>
+            
+                </div><!-- /content__item -->
+                <div class="content__item">
+                    <div class="content__item-intro">
+                        <img class="content__item-img" src="img/3.jpg" alt="Some image" />
+                        <h2 class="content__item-title">One day in Africa</h2> <div class="content__item-text"><p>    Описание работы</p></div>
+                    </div>
+            
+                </div><!-- /content__item -->
+                <div class="content__item">
+                    <div class="content__item-intro">
+                        <img class="content__item-img" src="img/5.jpg" alt="Some image" />
+                        <h2 class="content__item-title">Wrecked and happy</h2> <div class="content__item-text"><p>    Описание работы</p></div>
+                    </div>
+            
+            
+                </div><!-- /content__item -->
+                <div class="content__item">
+                    <div class="content__item-intro">
+                        <img class="content__item-img" src="img/2.jpg" alt="Some image" />
+                        <h2 class="content__item-title">The silent thief</h2>
+                    </div>
+                    <h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
+                    <div class="content__item-text">
+            
+            
+                    </div>
+                </div><!-- /content__item -->
+                <div class="content__item">
+                    <div class="content__item-intro">
+                        <img class="content__item-img" src="img/5.jpg" alt="Some image" />
+                        <h2 class="content__item-title">Locked away</h2>
+                    </div>
+                    <h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
+                    <div class="content__item-text">
+            
+            
+                    </div>
+                </div><!-- /content__item -->
+            
+                <button class="content__close">Close</button>
+                <svg class="content__indicator icon icon--caret"><use xlink:href="#icon-caret"></use></svg>
+            </div>
+        </main></div></div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+
+       <div class="col-12"><div class="footer__copyright">© 2020, Andrey Ivakhnenko</div>
+          </div>
+        </div>
+    </div>
+
+</footer>
+<!--<script src="js/imagesloaded.pkgd.min.js"></script>-->
+<!--<script src="js/TweenMax.min.js"></script>-->
+<!--<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie_svg.min.js"></script>-->
+
+<script id="vs" type="f">
+	attribute vec2 position;
+	attribute vec2 texcoord;
+
+	uniform mat3 u_matrix;
+
+	varying vec2 v_texcoord;
+
+	void main() {
+		 gl_Position = vec4(u_matrix * vec3(position, 1), 1);
+		 v_texcoord = texcoord;
+	}
+</script>
+
+<script id="fs" type="f">
+	precision mediump float;
+
+	uniform vec2 u_mouse;
+
+	uniform sampler2D u_originalImage;
+	uniform sampler2D u_mapImage;
+
+	varying vec2 v_texcoord;
+
+	void main() {
+		 vec4 depthDistortion = texture2D(u_mapImage, v_texcoord);
+		 float parallaxMult = depthDistortion.r;
+
+		 vec2 parallax = (u_mouse) * parallaxMult;
+
+		 vec4 original = texture2D(u_originalImage, (v_texcoord + parallax));
+		 gl_FragColor = original;
+	}
+</script>
+
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/charming.min.js"></script>
+<script src="js/main.min.js"></script>
+
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>-->
+
+
+
+
+<!--<script src='https://cdn.rawgit.com/greggman/twgl.js/master/dist/4.x/twgl-full.min.js'></script>-->
+<!--<script src='https://webglfundamentals.org/webgl/resources/m3.js'></script>-->
+
+
+
+<!--<script src="js/script.js"></script>
+
+
+
+
+
+
+<script src="js/masonry.pkgd.min.js"></script>
+
+<script src="js/charming.min.js"></script>
+<script src="js/demo.js"></script>-->
+
+<script>
+
+   // g.attr('src', "img/behance.svg");
+    </script>
+
+</body>
+</html>
